@@ -1,0 +1,19 @@
+tomcat7::install::jdbc:                    "9.3-1101-jdbc4.jar"
+tomcat7::install::jdbc_source:             "https://oss.sonatype.org/content/repositories/releases/org/postgresql/postgresql/9.3-1101-jdbc4/postgresql-9.3-1101-jdbc4.jar"
+tomcat7::install::login:                   "loginModule.jar"
+tomcat7::install::login_source:            "org.chtijbug.drools:drools-platform-login:1.0.0-SNAPSHOT:jar"
+tomcat7::install::dbutils:                  "commons-dbutils.jar"
+tomcat7::install::dbutils_source:           "http://central.maven.org/maven2/commons-dbutils/commons-dbutils/1.6/commons-dbutils-1.6.jar"
+tomcat7-examples::install::loyalty_soap:         	"loyalty-soap-server.war"
+tomcat7-examples::install::loyalty_soap_source:  	"org.chtijbug.drools:loyalty-soap-server:1.0.0-SNAPSHOT:war"
+tomcat7-examples::install::loyalty_web:         		"loyalty-web.war"
+tomcat7-examples::install::loyalty_web_source:  		"org.chtijbug.drools:loyalty-web:1.0.0-SNAPSHOT:war"
+tomcat7-examples::install::swimming_pool:         	"swimming-pool-soap-server.war"
+tomcat7-examples::install::swimming_pool_source:  	"org.chtijbug.drools:swimming-pool-soap-server:1.0.0-SNAPSHOT:war"
+
+
+
+
+pgsqldpf::install::tablespacedir:        "/var/lib/postgresql/9.3/myspace/"
+pgsqldpf::install::loyalty_user:             "loyaltyweb"
+pgsqldpf::install::loyalty_passwd:       "loyaltyweb"
