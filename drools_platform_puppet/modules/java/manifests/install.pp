@@ -39,5 +39,12 @@ class java::install {
     content => template('java/supervisord.conf'),
     require => [Package['supervisor']]
   }
+  
+   file { '/usr/bin/startContainer.sh':
+    ensure  => present,
+    replace => true,
+    content => template('java/startContainer.sh'),
+    require => [Package['supervisor']]
+  }
 
 }

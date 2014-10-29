@@ -14,6 +14,8 @@ node default {
 
   stage { 'javaapp': require => Stage['dbcontent'], }
 
+ stage { 'samples': require => Stage['javaapp'], }
+ 
   user { "pymma":
     ensure   => present,
     password => "abcde",
@@ -54,7 +56,7 @@ node default {
     stage => javaapp,
   }
     class { 'tomcat7-examples::install':
-    stage => javaapp,
+    stage => samples,
   }
   include 'pgsqldpf::install' # include in the installation code of this node the module postgres::install
   include 'java::install' # include in the installation code of this node the module java::install

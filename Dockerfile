@@ -50,5 +50,5 @@ EXPOSE 5432
 
 ##RUN /bin/sh /tmp/set-psql-password.sh
 
-CMD ["/usr/bin/supervisord"]
+CMD ["/usr/bin/startContainer.sh"]
 
