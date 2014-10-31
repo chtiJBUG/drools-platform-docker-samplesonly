@@ -44,7 +44,8 @@ class java::install {
     ensure  => present,
     replace => true,
     content => template('java/startContainer.sh'),
-    require => [Package['supervisor']]
+    require => [Package['supervisor']],
+    mode   => 750
   }
 
 }

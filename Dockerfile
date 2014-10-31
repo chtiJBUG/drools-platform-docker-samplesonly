@@ -45,10 +45,10 @@ RUN rm -rf /var/cache/apt/archives/* /var/lib/apt/lists/*
 EXPOSE 8080
 
 # Expose the PostgreSQL and SSH port
-EXPOSE 22
+EXPOSE 22 
 EXPOSE 5432
 
-##RUN /bin/sh /tmp/set-psql-password.sh
+##RUN /bin/sh /tmp/set-psql-password.sh 
 
 CMD ["/usr/bin/startContainer.sh"]
 

@@ -22,11 +22,11 @@ class tomcat7-examples::install (
     src         => maven_to_link("${loyalty_web_source}"),
   }
    # download swimming_pool.war :
-  lib::wget { "${swimming_pool}":
-    destination => '/home/tomcat7/apache-tomcat-7.0/webapps/',
-    user        => 'tomcat7',
-    src         => maven_to_link("${swimming_pool_source}"),
-  }
+  #lib::wget { "${swimming_pool}":
+  #  destination => '/home/tomcat7/apache-tomcat-7.0/webapps/',
+  #  user        => 'tomcat7',
+  #  src         => maven_to_link("${swimming_pool_source}"),
+ # }
   
   
 
